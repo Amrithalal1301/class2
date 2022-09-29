@@ -8,8 +8,8 @@ int diff(){
   return out;
 }
 String show(int data){
-  int a=89;///we cannot return more than 1 value
-  return '$data'; ///string
+  ;///we cannot return more than 1 value
+  return '$data hello world'; ///string
 }
 double diife(int g){
   int f=20;
@@ -19,7 +19,7 @@ void main(){
   sum();
   int outab= diff();
   print(outab);
-  String h = show(20);
+  String h = show(50);
   print(h);
   double i= diife(50);
   print(i);
