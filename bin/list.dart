@@ -18,5 +18,22 @@ void main(){
   ///list.filled
   var list3 = List.filled(5,1 );   ///index 0 1 2 3 4 ...........
   list3[1]=2;
-  print(list3);
+  print('list3 =$list3');
+  
+
+  ///list.from by default growable true
+
+ var list4 = List.from(list3);
+  print('list4 = $list4');
+  
+  
+  ///list.generate growable true
+  ///=> arrow func/lamda func for single statement
+ 
+  List<int> list5 = List.generate(6, (index) => index*10);
+  print('list5 = $list5');
+
+  ///list.unmodifiable
+  var list6 = List.unmodifiable(list5);
+  print('list6 = $list6');
 }
