@@ -1,5 +1,5 @@
 void main(){
-  List mylist =[1,2,3,4,5,6,7];///without specific type
+  List mylist =[1,2,3,4,5,6,7,6];///without specific type
   List<int> num=[1,2,20,50,60];///list with integer type
   mylist.add('hello');
   num.add(100);
@@ -34,6 +34,23 @@ void main(){
   print('list5 = $list5');
 
   ///list.unmodifiable
-  var list6 = List.unmodifiable(list5);
+  List list6 = List.unmodifiable([100,200,3000,4000]);
+ /// list6.add(2000);
   print('list6 = $list6');
+
+  ///list.of
+ List list7 = List.of(mylist);
+ list7.add(200);
+ print(list7);
+
+ print(mylist.isNotEmpty);
+  print(mylist.isEmpty);
+  print(mylist.first);
+  print(mylist.last);
+
+  print(mylist.contains('hi'));
+  print(mylist.contains('hello'));
+  print(mylist.elementAt(2));
+  print(mylist.indexOf(6));
+  print(mylist.lastIndexOf(6));
 }
